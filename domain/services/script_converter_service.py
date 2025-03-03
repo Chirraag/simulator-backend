@@ -41,6 +41,8 @@ class ScriptConverterService:
             api_key=AZURE_OPENAI_KEY)
         self.kernel.add_service(self.chat_completion)
 
+        # Add fallback strategy
+
         # Add Deepgram plugin
         self.deepgram_plugin = DeepgramPlugin(DEEPGRAM_API_KEY)
         self.kernel.add_plugin(self.deepgram_plugin, "DeepgramPlugin")
@@ -49,9 +51,9 @@ class ScriptConverterService:
 
         # Configure execution settings
         self.execution_settings = AzureChatPromptExecutionSettings(
-            service_id="azure_gpt4",
+            service_id="azure_gpt4", # Add config values
             ai_model_id=AZURE_OPENAI_DEPLOYMENT_NAME,
-            temperature=0.7,
+            temperature=0.7, #test temperature
             top_p=1.0,
             max_tokens=2000,
             response_format=MyResponseSchema)

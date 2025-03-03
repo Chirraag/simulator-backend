@@ -2,9 +2,7 @@ curl -X POST "https://fbc61484-08b1-4074-88e9-3b80124c6073-00-18i142o2ejr5q.pike
 -H "Content-Type: application/json" \
 -d '{"id": "userId11"}'
 
-curl -X POST "https://222f85b5-dc4a-4b7e-b06d-011ec88f79ec-00-1dr2s97p3balr.sisko.replit.dev/training-data/fetch"
--H "Content-Type: application/json"
--d '{"id": "userId11"}'
+curl -X POST "https://everise-backend.replit.app/training-data/fetch" -H "Content-Type: application/json" -d '{"id": "user123"}'
 
 
 

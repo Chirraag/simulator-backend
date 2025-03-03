@@ -1,0 +1,11 @@
+aiohttp>=3.9.0
+certifi>=2024.12.14
+django-routers>=0.2
+fastapi>=0.115.6
+motor>=3.6.0
+PyPDF2>=3.0.0
+python-docx>=0.8.11
+python-dotenv>=1.0.1
+python-multipart>=0.0.6
+semantic-kernel>=0.9.1b1
+uvicorn>=0.34.0
